@@ -12,10 +12,6 @@ setGeneric(name = "foo1", signature = "x", def = function(x) {
 })
 
 #' Foo 2
-#'
-#' @description 
-#' I would like to export this as a mere interface for \emph{other} packages. 
-#' There shall be no default method that will be provided by \emph{this} package.
 #' 
 #' @param x \strong{Signature argument}. Main input argument.
 #' @export foo2
@@ -25,10 +21,6 @@ setGeneric(name = "foo2", signature = "x", def = function(x) {
 })
 
 #' Foo 3
-#'
-#' @description 
-#' I would like to export this as a mere interface for \emph{other} packages. 
-#' There shall be no default method that will be provided by \emph{this} package.
 #' 
 #' @param x \strong{Signature argument}. Main input argument.
 #' @exportPattern foo3

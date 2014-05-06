@@ -9,7 +9,6 @@ foo2(x)
 \item{x}{\strong{Signature argument}. Main input argument.}
 }
 \description{
-I would like to export this as a mere interface for \emph{other} packages.
-There shall be no default method that will be provided by \emph{this} package.
+Foo 2
 }
 
