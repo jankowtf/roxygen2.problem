@@ -1,0 +1,10 @@
+Package: roxygen2.problem
+Title: Dummy package
+Description: Provides code to illustrate a stackoverflow question
+URL: http://www.rappster.de
+Version: 0.0.1
+Maintainer: Janko Thyson <janko.thyson@rappster.de>
+Author: Janko Thyson <janko.thyson@rappster.de>
+Depends: R (>= 3.1.0)
+License: MIT
+LazyData: yes
