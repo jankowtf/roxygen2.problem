@@ -1,21 +1,17 @@
-#' Foo (Generic Only)
+#' Foo 
 #'
 #' @description 
 #' I would like to export this as a mere interface for \emph{other} packages. 
 #' There shall be no default method that will be provided by \emph{this} package.
 #' 
-#' @param x \strong{Signature argument}.
-#' 		Main input argument.
-#' @param ... Further arguments to be passed to subsequent functions.
-#' @author Janko Thyson \email{janko.thyson@@rappster.de}
-#' @references \url{http://www.rappster.de/roxygen2-problem}
+#' @param x \strong{Signature argument}. Main input argument.
 #' @export
 
 setGeneric(name = "foo", signature = "x", def = function(x, ...) {
     standardGeneric("foo")
 })
 
-#' Bar (Generic With Default Method)
+#' Bar
 #'
 #' @description 
 #' Just for illustration purposes, this is a generic for which \emph{this}
@@ -23,9 +19,6 @@ setGeneric(name = "foo", signature = "x", def = function(x, ...) {
 #' 
 #' @param x \strong{Signature argument}.
 #' 		Main input argument.
-#' @param ... Further arguments to be passed to subsequent functions.
-#' @author Janko Thyson \email{janko.thyson@@rappster.de}
-#' @references \url{http://www.rappster.de/roxygen2-problem}
 #' @rdname bar-methods
 #' @export
 
@@ -35,7 +28,6 @@ setGeneric(name = "bar", signature = "x", def = function(x, ...) {
  
 #' @param x  \code{\link{ANY}}.   
 #' @return \code{\link{character}}. \code{"Hello World!"}
-#' @rdname bar-methods
 #' @aliases bar
 #' @export
 
@@ -43,3 +35,15 @@ setMethod(f = "bar", signature = signature(x = "ANY"),
     definition = function(x, ...) {
         "Hello World!"
 })
+
+#' Foo Bar
+#'
+#' @param x \code{\link{character}}.
+#' @return \code{\link{character}}. Prints \code{x} and returns it.
+#' @export
+
+fooBar <- function(x) {
+    print(x)
+    x
+}
+
