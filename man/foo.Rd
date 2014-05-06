@@ -3,7 +3,7 @@
 \alias{foo}
 \title{Foo}
 \usage{
-foo(x, ...)
+foo(x)
 }
 \arguments{
 \item{x}{\strong{Signature argument}. Main input argument.}

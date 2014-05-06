@@ -3,7 +3,7 @@
 \alias{bar}
 \title{Bar}
 \usage{
-bar(x, ...)
+bar(x)
 }
 \arguments{
 \item{x}{\strong{Signature argument}.

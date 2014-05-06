@@ -4,7 +4,7 @@
 \alias{bar}
 \alias{bar,ANY-method}
 \usage{
-\S4method{bar}{ANY}(x, ...)
+\S4method{bar}{ANY}(x)
 }
 \arguments{
 \item{x}{\code{\link{ANY}}.}

@@ -7,7 +7,7 @@
 #' @param x \strong{Signature argument}. Main input argument.
 #' @export
 
-setGeneric(name = "foo", signature = "x", def = function(x, ...) {
+setGeneric(name = "foo", signature = "x", def = function(x) {
     standardGeneric("foo")
 })
 
@@ -22,7 +22,7 @@ setGeneric(name = "foo", signature = "x", def = function(x, ...) {
 #' @rdname bar-methods
 #' @export
 
-setGeneric(name = "bar", signature = "x", def = function(x, ...) {
+setGeneric(name = "bar", signature = "x", def = function(x) {
     standardGeneric("bar")
 })
  
@@ -32,7 +32,7 @@ setGeneric(name = "bar", signature = "x", def = function(x, ...) {
 #' @export
 
 setMethod(f = "bar", signature = signature(x = "ANY"), 
-    definition = function(x, ...) {
+    definition = function(x) {
         "Hello World!"
 })
 
