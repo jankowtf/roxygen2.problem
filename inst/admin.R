@@ -9,3 +9,9 @@ load_all()
 ## Roxygenize //
 roxygenize()
 
+## Build //
+build(binary=TRUE)
+
+## Install //
+install()
+
