@@ -10,7 +10,6 @@
 #' @author Janko Thyson \email{janko.thyson@@rappster.de}
 #' @references \url{http://www.rappster.de/roxygen2-problem}
 #' @export
-#' @exportMethod
 
 setGeneric(name = "foo", signature = "x", def = function(x, ...) {
     standardGeneric("foo")
